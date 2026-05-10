@@ -83,7 +83,6 @@ export default function EmployeesPage() {
           border: "1px solid rgba(99,102,241,0.18)",
         }}
       >
-        <span className="text-lg leading-none">💡</span>
         <div style={{ color: "rgba(148,163,184,0.8)" }}>
           Click the <strong style={{ color: "#818cf8" }}>pencil icon</strong> on any row to enable
           inline editing. Fields with a{" "}
