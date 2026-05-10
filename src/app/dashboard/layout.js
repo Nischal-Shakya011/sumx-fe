@@ -1,7 +1,7 @@
 import DashboardShell from "@/components/layout/DashboardShell";
 
 export const metadata = {
-  title: "Dashboard – SumX",
+  title: "Dashboard - SumX",
   description: "SumX analytics and employee management dashboard",
 };
 

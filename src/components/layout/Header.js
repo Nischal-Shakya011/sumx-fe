@@ -16,7 +16,6 @@ export default function Header({ onMenuToggle }) {
         zIndex: 40,
       }}
     >
-      {/* Mobile menu */}
       <button
         onClick={onMenuToggle}
         className="md:hidden btn btn-ghost btn-icon"
@@ -25,7 +24,6 @@ export default function Header({ onMenuToggle }) {
         <Menu size={20} />
       </button>
 
-      {/* Search */}
       <div className="relative flex-1 max-w-sm">
         <Search
           size={15}
@@ -42,7 +40,6 @@ export default function Header({ onMenuToggle }) {
 
       <div className="flex-1" />
 
-      {/* Actions */}
       <button
         className="relative btn btn-ghost btn-icon"
         aria-label="Notifications"
@@ -54,7 +51,6 @@ export default function Header({ onMenuToggle }) {
         />
       </button>
 
-      {/* Avatar */}
       <div
         className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold cursor-pointer hover:ring-2 transition-all"
         style={{
@@ -63,7 +59,7 @@ export default function Header({ onMenuToggle }) {
           ringColor: "#6366f1",
         }}
       >
-        JD
+        SJ
       </div>
     </header>
   );

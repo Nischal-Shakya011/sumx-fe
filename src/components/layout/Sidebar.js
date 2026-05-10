@@ -24,7 +24,7 @@ const navItems = [
 
 const secondaryItems = [
   { label: "Help & Support", href: "/dashboard/help", icon: HelpCircle },
-  { label: "Notifications", href: "/dashboard/notifications", icon: Bell, badge: 3 },
+  { label: "Notifications", href: "/dashboard/notifications", icon: Bell },
 ];
 
 export default function Sidebar() {
@@ -40,7 +40,6 @@ export default function Sidebar() {
         borderRight: "1px solid rgba(99,102,241,0.12)",
       }}
     >
-      {/* Logo */}
       <div
         className="flex items-center gap-3 px-5"
         style={{ height: "var(--header-height)", borderBottom: "1px solid rgba(99,102,241,0.1)" }}
@@ -52,15 +51,8 @@ export default function Sidebar() {
           <Zap size={16} fill="white" color="white" />
         </div>
         <span className="text-lg font-bold gradient-text tracking-tight">SumX</span>
-        <span
-          className="ml-auto text-xs px-1.5 py-0.5 rounded-full font-medium"
-          style={{ background: "rgba(99,102,241,0.15)", color: "#818cf8", border: "1px solid rgba(99,102,241,0.2)" }}
-        >
-          v2.0
-        </span>
       </div>
 
-      {/* Main nav */}
       <nav className="flex-1 overflow-y-auto py-4 px-3 space-y-1">
         <p className="text-xs font-semibold uppercase tracking-widest px-2 mb-3" style={{ color: "rgba(148,163,184,0.5)" }}>
           Main Menu
@@ -132,7 +124,6 @@ export default function Sidebar() {
         </div>
       </nav>
 
-      {/* User footer */}
       <div
         className="px-3 py-4"
         style={{ borderTop: "1px solid rgba(99,102,241,0.1)" }}
@@ -142,11 +133,11 @@ export default function Sidebar() {
             className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold shrink-0"
             style={{ background: "linear-gradient(135deg,#6366f1,#a78bfa)", color: "#fff" }}
           >
-            JD
+            SJ
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-slate-200 truncate">John Doe</p>
-            <p className="text-xs text-slate-500 truncate">john@sumx.io</p>
+            <p className="text-sm font-medium text-slate-200 truncate">Sagar Joshi</p>
+            <p className="text-xs text-slate-500 truncate">sagar@sumx.io</p>
           </div>
           <LogOut size={15} className="text-slate-500 group-hover:text-slate-300 transition-colors shrink-0" />
         </div>

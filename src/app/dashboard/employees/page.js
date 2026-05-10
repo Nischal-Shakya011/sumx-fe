@@ -6,7 +6,6 @@ import { employeeColumns, employeeSchema } from "@/components/table/employeeColu
 import { employees as initialData } from "@/lib/mockData";
 import { UserPlus, Download, CheckCircle2, AlertCircle, X } from "lucide-react";
 
-/* ── Toast notification (lightweight, no deps) ── */
 function Toast({ message, type, onClose }) {
   const isSuccess = type === "success";
   return (
@@ -58,7 +57,6 @@ export default function EmployeesPage() {
 
   return (
     <div className="space-y-6 max-w-full">
-      {/* Page header */}
       <div className="flex items-start justify-between flex-wrap gap-4">
         <div>
           <h1 className="text-2xl font-bold text-white">Employees</h1>
@@ -78,7 +76,6 @@ export default function EmployeesPage() {
         </div>
       </div>
 
-      {/* Usage hint card */}
       <div
         className="flex items-start gap-3 p-4 rounded-xl text-sm"
         style={{
@@ -97,7 +94,6 @@ export default function EmployeesPage() {
         </div>
       </div>
 
-      {/* The reusable EditableTable */}
       <div className="glass-card p-6">
         <EditableTable
           columns={employeeColumns}
@@ -113,7 +109,6 @@ export default function EmployeesPage() {
         />
       </div>
 
-      {/* Toast */}
       {toast && (
         <Toast
           message={toast.message}

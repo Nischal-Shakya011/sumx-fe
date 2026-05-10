@@ -4,11 +4,10 @@ import Link from "next/link";
 import { ArrowRight, Users, TrendingUp, Activity } from "lucide-react";
 
 export const metadata = {
-  title: "Overview – SumX Dashboard",
+  title: "Overview - SumX Dashboard",
   description: "Dashboard overview with key metrics and recent activity",
 };
 
-// Compute department breakdown
 function getDeptBreakdown(data) {
   const map = {};
   data.forEach(({ department }) => {
@@ -30,17 +29,15 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-8 max-w-7xl">
-      {/* Page heading */}
       <div>
         <h1 className="text-2xl font-bold text-white">
-          Welcome back, <span className="gradient-text">John</span> 👋
+          Welcome back, <span className="gradient-text">Sagar</span>
         </h1>
         <p className="mt-1 text-sm" style={{ color: "rgba(148,163,184,0.7)" }}>
           Here's what's happening across your organization today.
         </p>
       </div>
 
-      {/* Stat cards */}
       <section aria-label="Key metrics">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {statCards.map((card) => (
@@ -49,9 +46,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      {/* Middle row */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Department breakdown */}
         <div className="glass-card p-6 lg:col-span-2">
           <div className="flex items-center justify-between mb-5">
             <h2 className="font-semibold text-white flex items-center gap-2">
@@ -85,7 +80,6 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Status summary */}
         <div className="glass-card p-6">
           <h2 className="font-semibold text-white flex items-center gap-2 mb-5">
             <Activity size={16} style={{ color: "#818cf8" }} />
@@ -122,7 +116,6 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Recent employees */}
       <div className="glass-card p-6">
         <div className="flex items-center justify-between mb-5">
           <h2 className="font-semibold text-white flex items-center gap-2">

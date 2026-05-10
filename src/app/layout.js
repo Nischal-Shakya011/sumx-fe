@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SumX – Dashboard",
-  description: "SumX – Analytics and Employee Management Platform",
+  title: "SumX - Dashboard",
+  description: "SumX - Analytics and Employee Management Platform",
 };
 
 export default function RootLayout({ children }) {
